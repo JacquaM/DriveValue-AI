@@ -1,4 +1,4 @@
-# DriveValue AI#
+# DriveValue AI
 
 ## An Explainable Machine Learning Framework for Predicting Used Car Prices ##
 
