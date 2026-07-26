@@ -1,89 +1,255 @@
-# DriveValue AI
+#  DriveValue AI
 
-## An Explainable Machine Learning Framework for Predicting Used Car Prices ##
-
-![Python](https://img.shields.io/badge/Python-3.14-blue)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
-![Status](https://img.shields.io/badge/Status-In%20Progress-success)
+**Author:** Jacqualine Makgolana
 
 ---
 
 # Project Overview
 
-The used vehicle market is one of the largest sectors of the automotive industry. However, determining a fair asking price remains a challenge due to multiple factors such as mileage, vehicle age, transmission, ownership history, fuel type, and brand reputation.
+## Explainable Machine Learning Framework for Used Vehicle Price Prediction
 
-DriveValue AI aims to develop an explainable machine learning model capable of predicting the asking price of used vehicles while uncovering the key factors that influence vehicle valuation.
+An end-to-end machine learning project that predicts used vehicle asking prices using Random Forest Regression and Explainable AI (SHAP), following the CRISP-DM methodology.
+---
+
+# Business Problem
+
+Used vehicle pricing is often subjective, inconsistent, and influenced by human judgement.
+
+DriveValue AI provides a data-driven pricing framework capable of generating fair and consistent asking price estimates while reducing pricing bias.
+
+The solution is designed to support:
+
+- Vehicle dealerships
+- Online vehicle marketplaces
+- Financial institutions
+- Private vehicle sellers
 
 ---
 
-# Objectives#
+# Business Objectives
 
-- Perform professional data quality assessment
-- Conduct exploratory data analysis
-- Engineer meaningful predictive features
-- Build multiple regression models
-- Optimize model performance
-- Explain model predictions
-- Deliver actionable business recommendations
+- Predict used vehicle asking prices using machine learning.
+- Compare multiple regression algorithms.
+- Identify the best-performing predictive model.
+- Improve model transparency using Explainable AI.
+- Demonstrate deployment readiness.
 
 ---
 
-# Technology Stack #
+# Dataset
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Plotly
-- Scikit-Learn
-- XGBoost
-- SHAP
-- Jupyter Notebook
+The project uses a real-world dataset containing used vehicle listings.
+
+**Dataset Summary**
+
+- **Records:** 14,988 vehicle listings
+- **Features:** 466 engineered features
+- **Target Variable:** Asking Price (₹)
 
 ---
 
-# Project Structure #
+# CRISP-DM Methodology
+
+The project follows the CRISP-DM framework.
+
+1. Business Understanding
+2. Data Understanding
+3. Data Preparation
+4. Modelling
+5. Evaluation
+6. Deployment
+
+---
+
+# Repository Structure
 
 ```text
-DriveValue_AI/
+DRIVEVALUE_AI/
+
+├── app/
+│   └── app.py
 │
 ├── Data/
-├── notebooks/
-├── reports/
-├── src/
+│   ├── raw/
+│   └── processed/
+│
+├── images/
+│
 ├── models/
-├── app/
-└── README.md
+│   ├── random_forest_model.pkl
+│   ├── feature_columns.pkl
+│   ├── model_columns.pkl
+│   └── categories.pkl
+│
+├── notebooks/
+│   ├── 01_Data_Audit.ipynb
+│   ├── 02_Exploratory_Data_Analysis.ipynb
+│   ├── 03_Feature_Engineering.ipynb
+│   ├── 04_Model_Building.ipynb
+│   ├── 05_Model_Optimization_and_Explainability.ipynb
+│   └── 06_Final_Evaluation_Deployment.ipynb
+│
+├── reports/
+│   ├── Executive_Summary.pdf
+│   └── Final_Project_Report.pdf
+│
+├── src/
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
 
-# Project Status #
+# Machine Learning Models
 
-Currently in Development
+The following regression algorithms were evaluated:
 
-✔ Project Setup
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
 
-✔ Data Audit
-
-⬜ Exploratory Data Analysis
-
-⬜ Feature Engineering
-
-⬜ Machine Learning
-
-⬜ Hyperparameter Tuning
-
-⬜ Model Explainability
-
-⬜ Final Presentation
+After evaluation, the **Random Forest Regressor** achieved the strongest predictive performance and was selected as the final production model.
 
 ---
 
-# 👩‍💻 Author
+# Model Performance
 
-Jacqualine Makgolana
+| Metric | Value |
+|---------|-------|
+| MAE | ₹398,156 |
+| RMSE | ₹1,267,201 |
+| R² Score | 0.446 |
 
-Aspiring Data Scientist
+---
 
-South Africa
+# Explainable AI
+
+Model transparency was achieved using **SHAP (SHapley Additive Explanations).**
+
+SHAP was used to:
+
+- Explain feature importance
+- Interpret prediction behaviour
+- Increase stakeholder trust
+- Support transparent pricing decisions
+
+# Streamlit Application
+
+DriveValue AI includes an interactive Streamlit application that enables users to estimate used vehicle asking prices by entering:
+
+- Vehicle Year
+- Mileage
+- Brand
+- Model
+- Fuel Type
+- Transmission
+- Ownership History
+- Listing Date
+
+The application loads the trained Random Forest model and generates real-time price predictions.
+---
+
+# Deployment Workflow
+
+Customer Vehicle Details
+
+↓
+
+Data Validation
+
+↓
+
+Feature Engineering
+
+↓
+
+Random Forest Model
+
+↓
+
+SHAP Explainability
+
+↓
+
+Predicted Vehicle Price
+
+↓
+
+Dealer Dashboard
+
+---
+
+# Key Findings
+
+- Vehicle age strongly influences asking price.
+- Vehicle brand significantly affects predicted value.
+- Vehicle model contributes additional pricing information.
+- Mileage remains an important pricing factor.
+- Random Forest produced the highest predictive accuracy.
+- SHAP successfully improved model interpretability.
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Random Forest Regression
+- SHAP
+- Plotly
+- Matplotlib
+- Joblib
+- Streamlit
+- Jupyter Notebook
+---
+
+# Future Improvements
+
+- Deploy the application to Streamlit Community Cloud or Azure.
+- Integrate live vehicle marketplace data.
+- Automate periodic model retraining.
+- Improve prediction accuracy using Gradient Boosting or XGBoost.
+- Build an interactive dealer analytics dashboard..
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/JacquaM/DriveValue-AI.git
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+# Run the Streamlit Application
+
+```bash
+cd app
+streamlit run App/app.py
+
+---
+
+# Author
+
+**Jacqualine Makgolana**
+
+Data Science Capstone Project
+
+DriveValue AI — 2026
+## License
+
+This project was developed for academic purposes as part of the ZAIO Data Science Capstone Project.

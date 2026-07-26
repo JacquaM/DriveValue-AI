@@ -1,0 +1,23 @@
+0000000000000000000000000000000000000000 09120eba83cdebc2d9c443979f57520944d888ef JacquaM <paris180525@gmail.com> 1783716755 +0200	commit (initial): Initial project structure and data audit setup
+09120eba83cdebc2d9c443979f57520944d888ef 09120eba83cdebc2d9c443979f57520944d888ef JacquaM <paris180525@gmail.com> 1783716813 +0200	Branch: renamed refs/heads/master to refs/heads/main
+09120eba83cdebc2d9c443979f57520944d888ef 8207cca751a50f111eb3aa2226d7f2ae031d5e81 JacquaM <paris180525@gmail.com> 1783717808 +0200	commit: project README
+8207cca751a50f111eb3aa2226d7f2ae031d5e81 9275bc32389c9824198c1cd6c616e94031c04a92 JacquaM <paris180525@gmail.com> 1783719264 +0200	commit: Updating changes
+9275bc32389c9824198c1cd6c616e94031c04a92 ecb37904745afeb97ba74d82f8106cf279b86fb8 JacquaM <paris180525@gmail.com> 1783796548 +0200	commit: data cleaning and quality improvements
+ecb37904745afeb97ba74d82f8106cf279b86fb8 c8c39ce8cfbf94daed3a61f6f6a0a22f5fe3374c JacquaM <paris180525@gmail.com> 1783796766 +0200	commit: Added a notebook summary
+c8c39ce8cfbf94daed3a61f6f6a0a22f5fe3374c 8d19574367d33902d2c956ba96eacdf8946056b4 JacquaM <paris180525@gmail.com> 1783800092 +0200	commit: exploratory data analysis notebook
+8d19574367d33902d2c956ba96eacdf8946056b4 73a3d4c28ae62a8f2bfd126fad7c6a44588522a5 JacquaM <paris180525@gmail.com> 1783800402 +0200	commit: exploratory data analysis notebook
+73a3d4c28ae62a8f2bfd126fad7c6a44588522a5 6ffab4825a4f3ccd9d53b6274229bfe269fe35e9 JacquaM <paris180525@gmail.com> 1783800661 +0200	commit: Complete Notebook 2: Exploratory Data Analysis
+6ffab4825a4f3ccd9d53b6274229bfe269fe35e9 3eaf73edb2b25a26fe33d997e8eb0068eb88fb33 JacquaM <paris180525@gmail.com> 1783802350 +0200	commit: Start Notebook 3: Feature Engineering
+3eaf73edb2b25a26fe33d997e8eb0068eb88fb33 0c8580a15843f504efbcf6d5ed8afd99a6ab1f67 JacquaM <paris180525@gmail.com> 1783802545 +0200	commit: Complete Notebook 3: Feature Engineering and Preprocessing
+0c8580a15843f504efbcf6d5ed8afd99a6ab1f67 d46696841d37d4323457ef918773620659b11710 JacquaM <paris180525@gmail.com> 1783888113 +0200	commit: Notebook 4 incomplete
+d46696841d37d4323457ef918773620659b11710 f9ef9c38cbd32007b8a65b03b4945aa98f69c8b3 JacquaM <paris180525@gmail.com> 1783970432 +0200	commit: notebook 4 incompleet
+f9ef9c38cbd32007b8a65b03b4945aa98f69c8b3 092cf0de6a8b72eb02650662f3bd084bf08830e3 JacquaM <paris180525@gmail.com> 1783976989 +0200	commit: Save trained Random Forest model for deployment and explainability
+092cf0de6a8b72eb02650662f3bd084bf08830e3 e9d9b6eda4e2aa1abecf34c782b93a3c0ad38c21 JacquaM <paris180525@gmail.com> 1784490061 +0200	commit: notebook 5 modification
+e9d9b6eda4e2aa1abecf34c782b93a3c0ad38c21 a1982c782174dcc5d55991a26a2a9c030e7a2c70 JacquaM <paris180525@gmail.com> 1784490413 +0200	commit: updated notebook
+a1982c782174dcc5d55991a26a2a9c030e7a2c70 18958c9294eb85c50fc31249bcbdf59f1714bad0 JacquaM <paris180525@gmail.com> 1784583849 +0200	commit: notebook 5 partially complete
+18958c9294eb85c50fc31249bcbdf59f1714bad0 f1a50557f8c549024722ab9d47c76e83dd9d93dd JacquaM <paris180525@gmail.com> 1784586132 +0200	commit: Notebook 6
+f1a50557f8c549024722ab9d47c76e83dd9d93dd b8ddb5e51f8e772444427ee36e9df6b7a91c6a79 JacquaM <paris180525@gmail.com> 1784587060 +0200	commit: Notebook 1 completed
+b8ddb5e51f8e772444427ee36e9df6b7a91c6a79 23dee34ae069ec97e2b121a5fa5926e0078a620f JacquaM <paris180525@gmail.com> 1784663793 +0200	commit: Notebook complete
+23dee34ae069ec97e2b121a5fa5926e0078a620f 663e824870cecaeadba5a0fe7c095653f1e9a547 JacquaM <paris180525@gmail.com> 1784666000 +0200	commit: Notebook complete
+663e824870cecaeadba5a0fe7c095653f1e9a547 1332d5755a4a6ba01eb6d3978fef9d8427f8a8c8 JacquaM <paris180525@gmail.com> 1784666344 +0200	commit: Notebooks updated
+1332d5755a4a6ba01eb6d3978fef9d8427f8a8c8 c78a2c0e9247adc236ff514522141e3c13cc800d JacquaM <paris180525@gmail.com> 1784669268 +0200	commit: Notebook completed
