@@ -82,13 +82,9 @@ DRIVEVALUE_AI/
 │   ├── model_columns.pkl
 │   └── categories.pkl
 │
-├── notebooks/
-│   ├── 01_Data_Audit.ipynb
-│   ├── 02_Exploratory_Data_Analysis.ipynb
-│   ├── 03_Feature_Engineering.ipynb
-│   ├── 04_Model_Building.ipynb
-│   ├── 05_Model_Optimization_and_Explainability.ipynb
-│   └── 06_Final_Evaluation_Deployment.ipynb
+|notebooks/
+|
+└── DriveValue_AI_Capstone_Project.ipynb
 │
 ├── reports/
 │   ├── Executive_Summary.pdf
@@ -236,21 +232,36 @@ Launch Jupyter Notebook
 ```bash
 jupyter notebook
 ```
-# Run the Streamlit Application
+## Running the Streamlit Application
+
+1. Navigate to the project directory:
 
 ```bash
-cd app
-streamlit run App/app.py
+cd DriveValue_AI
+```
 
----
+2. Activate your Python virtual environment.
 
-# Author
+Windows PowerShell:
 
-**Jacqualine Makgolana**
+```powershell
+.\.venv-1\Scripts\Activate.ps1
+```
 
-Data Science Capstone Project
+3. Install the project dependencies (if not already installed):
 
-DriveValue AI — 2026
-## License
+```bash
+pip install -r requirements.txt
+```
 
-This project was developed for academic purposes as part of the ZAIO Data Science Capstone Project.1  
+4. Launch the Streamlit application:
+
+```bash
+python -m streamlit run app/App.py
+```
+
+5. Open your browser and navigate to:
+
+```
+http://localhost:8501
+```
